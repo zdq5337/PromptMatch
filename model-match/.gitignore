@@ -1,0 +1,83 @@
+
+# 忽略操作系统文件
+.DS_Store
+
+# Python bytecode files
+*.pyc
+*.pyo
+
+# Byte-compiled Python files
+__pycache__/
+*.py[co]
+
+# C extensions and temporary files
+*.so
+*.pyd
+*.egg-info/
+dist/
+*.egg
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+
+# Flask secret key file
+secret_key
+
+# Flask instance folder
+instance/
+
+# Virtualenv files
+venv/
+*.venv
+
+# Pipenv files
+Pipfile.lock
+# If you're using a virtualenv wrapper such as `venv`, you might want to ignore the `venv` folder here as well:
+venv/
+
+# Environment variables file
+.env
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.swn
+*.bak
+
+# PyCharm project files
+.idea/
+*.iml
+
+# PyCharm cache
+*__pycache__/
+*.idea/caches/
+
+# PyCharm logs
+*.log
+
+# VSCode files
+.vscode/
+
+# Atom project files
+.project
+
+# Sublime Text files
+*.sublime-*
+*.sublime-project
+
+# VSCode extensions
+.vscode/extensions
+
+# Node.js files
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# .env files that shouldn't be committed
+.env.local
+venv/
+.vs/

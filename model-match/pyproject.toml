@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "model-match"
+version = "V0.0.1"
+description = "用于各个大语言模型之间prompt的对比,以及RAG流程."
+authors = ["shrimp <your@email.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.109.2"
+loguru = "^0.7.2"
+orjson = "^3.9.10"
+rich = "^13.7.0"
+pyyaml = "^6.0.1"
+netifaces = "^0.11.0"
+sqlalchemy = "^2.0.27"
+sqlmodel = "^0.0.16"
+#mysql = "^0.0.3"
+#mysqlclient = "^2.2.4"
+mysql-connector-python = "^8.3.0"
+langchain = "^0.1.12"
+langchain-openai = "^0.1.0"
+langchain-community = "^0.0.28"
+langchainhub = "^0.1.15"
+chromadb = "^0.4.24"
+bs4 = "^0.0.2"
+uvicorn = { version = "^0.25.0", extras = ["standard"] }
+schedule = "^1.2.1"
+pypdfium2 = "^4.28.0"
+sentence-transformers = "^2.6.1"
+pyjwt = "^2.8.0"
+qianfan = "^0.3.14"
+zhipuai = "^2.1.1.20240620.1"
+langchain-postgres = "^0.0.9"
+psycopg2-binary= "^2.9.9"
+oss2 = "^2.19.0"
+python-multipart = "^0.0.9"
+passlib = "^1.7.4"
+pyrate-limiter = "^3.7.0"
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+# 禁用 PEP 517 构建方式
+#build-backend = "poetry.masonry.api"
