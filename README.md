@@ -10,10 +10,10 @@ Compare and analyze chatbot responses for enhanced prompt interactions.
 http://taitan.prompt-match.cn/
 
 ## 项目简介：
-PromptMatch 是一个开源的测试和优化平台，
+PromptMatch 是一个开源的Prompt测试和优化平台，
 专为 AI 聊天机器人设计。它允许开发者和研究人员创建、测试和比较各种提示模板，
 以提高与聊天机器人的交互效率和效果。
-通过 PromptMatch，用户可以轻松地管理多个聊天机器人的提示，并分析它们的响应，以找到最佳的交互方式。
+通过 PromptMatch，用户可以轻松地管理多个聊天机器人的Prompt，并对比分析它们的响应，以找到最佳的反馈效果，特别适合多模型应用为每个Prompt选择最优模型。
 
 ## 主要功能：
 
@@ -38,3 +38,8 @@ PromptMatch 是一个开源的测试和优化平台，
 然后，打开浏览器，访问 http://localhost:3000，即可开始使用 PromptMatch。
 
 ![img.png](img.png)
+
+## 后续计划
+- 优化前端交互体验，添加使用引导
+- 优化大模型与RAG集成的场景
+- 在agent中集成，方便特定场景使用
