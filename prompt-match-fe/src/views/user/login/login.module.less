@@ -1,0 +1,188 @@
+/*
+ * @Description: 登录css
+ * @Author: Kyeoni hujr
+ * @Date: 2024-09-10 14:27:58
+ * @LastEditors: Kyeoni hujr
+ * @LastEditTime: 2024-09-10 16:58:42
+ */
+
+.loginWrapper {}
+
+.loginBackgroundWrapper {
+  z-index: 0;
+  position: fixed;
+  inset: 0;
+}
+
+.loginBackground {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  display: block;
+}
+
+.loginMain {
+  display: flex;
+  justify-content: center;
+}
+
+.loginContent {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  justify-content: space-between;
+}
+
+.loginContentTop {
+  padding-top: 5rem;
+}
+
+.loginContentMain {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.loginContentMainLeft {
+  display: none;
+  width: 480px;
+  margin-top: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .loginContentMainLeft {
+    display: block;
+  }
+}
+.loginContentMainRight {
+
+}
+.loginFormWrapper {
+  display: flex;
+  margin-top: 10rem;
+  box-sizing: border-box;
+  width: fit-content;
+  font-family: inherit;
+  font-style: normal;
+}
+.loginFormWrapperInner {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  max-width: calc(-2.5rem + 100vw);
+  width: 25rem;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.07);
+  border-radius: 0.75rem;
+  color: rgb(33, 33, 38);
+  position: relative;
+  overflow: hidden;
+  border-width: 0px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px 0px, rgba(25, 28, 33, 0.2) 0px 15px 35px -5px, rgba(0, 0, 0, 0.07) 0px 0px 0px 1px;
+}
+
+.loginFormWrapperInnerNext {
+  box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    gap: 2rem;
+    background-color: white;
+    transition-property: background-color, background, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 200ms;
+    text-align: center;
+    z-index: 10;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.03);
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 2rem 2.5rem;
+    -webkit-box-pack: center;
+    place-content: center;
+    border-width: 0px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 2px 0px, rgba(25, 28, 33, 0.06) 0px 1px 2px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+}
+
+
+// FormWrapper.tsx
+.formFieldTitle {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(33, 33, 38);
+  letter-spacing: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.38462;
+  padding-bottom: 0.9rem;
+}
+.formFieldWrapperOfComponent {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0.6rem;
+}
+
+// LoginForm.tsx
+.loginFormOfComponent {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+.loginFormInputOfComponent {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0.375rem 0.75rem;
+  background-color: white;
+  color: rgb(19, 19, 22);
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  max-height: 2.25rem;
+  width: 100%;
+  aspect-ratio: unset;
+  accent-color: rgb(104, 66, 255);
+  font-family: inherit;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  // font-size: 0.8125rem;
+  line-height: 1.6;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.11);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 1px 0px;
+  transition-property: background-color, background, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: ease;
+  transition-duration: 200ms;
+  border-width: 0px;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 0px 0px 1px, rgba(0, 0, 0, 0.07) 0px 0px 1px 0px;
+}
+.loginFormInputOfComponent:hover {
+  box-shadow: rgba(0, 0, 0, 0.28) 0px 0px 0px 1px, rgba(0, 0, 0, 0.11) 0px 0px 1px 0px;
+}
+.loginFormInputOfComponent:focus {
+  border-color: rgba(0, 0, 0, 0.28);
+  -webkit-tap-highlight-color: transparent;
+  border-width: 0px;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 0px 0px 1px, rgba(0, 0, 0, 0.07) 0px 0px 1px 0px;
+  outline: none;
+}
+.loginFormInputOfComponent:focus-within {
+  box-shadow: rgba(0, 0, 0, 0.28) 0px 0px 0px 1px, rgba(0, 0, 0, 0.11) 0px 0px 1px 0px, rgba(0, 0, 0, 0.11) 0px 0px 0px 4px;
+}

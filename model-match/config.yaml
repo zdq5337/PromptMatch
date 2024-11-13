@@ -1,0 +1,30 @@
+dat:
+  model-match:
+    name: "model-match"
+    port: 7000
+  large-model:
+    openai-key: "sk-"
+    glm-key: ""
+    kimi-key: "sk-"
+    # 注意这里可以配置多个，使用英文逗号, 分割必须是不同账号下的key
+    siliconflow-key: "sk-,sk-"
+    qianfan-ak: ""
+    qianfan-sk: ""
+  embedding-model:
+    text2vec-base-chinese:
+      model-path: ""
+  file-path: ""
+  database:
+    url: "postgresql+psycopg2://username:passward@127.0.0.1:12345/prompt_match"
+  aliyun:
+    oss:
+      access-key-id: ""
+      access-key-secret: ""
+      url: ""
+      bucket-name: "prompt-match"
+  rag:
+    vector:
+      pg-vector:
+        url: "postgresql+psycopg2://username:passward@127.0.0.1:12345/model_match_rag"
+
+

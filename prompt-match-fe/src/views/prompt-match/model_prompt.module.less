@@ -1,0 +1,278 @@
+.layoutStyle {
+  height: 100%; // 设置高度为视口的高度
+}
+
+.headerStyle {
+  text-align: center;
+  color: #fff;
+  height: 64px;
+  padding-inline: 48px;
+  line-height: 64px;
+  background-color: #f3f9fd;
+}
+
+.headerAllRunButton{
+  margin-right: 20px;
+  float: right;
+  margin-top: 15px;
+  background-color: #00b4cc;
+}
+
+//.contentStyle {
+//  display: flex; // 添加flex布局
+//  flex-wrap: nowrap; // 设置子元素为横向排列且不换行
+//  align-items: flex-start;
+//  text-align: center;
+//  color: #fff;
+//  background-color: #0958d9;
+//  overflow-x: auto; // 添加水平滚动条
+//}
+
+.contentStyle {
+  text-align: center;
+  color: #fff;
+  background-color: #f3f9fd;
+  overflow-x: auto; // 添加水平滚动条
+  white-space: nowrap; // 阻止文本换行
+  flex-wrap: nowrap; // 设置子元素为横向排列且不换行
+}
+
+.contentStyle > div {
+  float: left; // 设置子元素浮动
+  //white-space: nowrap; // 阻止文本换行
+}
+
+//.contentStyle::after {
+//  content: "";
+//  display: table;
+//  clear: both; // 清除浮动
+//}
+
+.siderStyle {
+  //text-align: center;
+  //line-height: 120px;
+  flex-direction: column; // 设置子元素为竖向排列
+  color: #fff;
+  background-color: #f3f9fd;
+  //background: #1677ff;
+}
+
+.siderItem {
+  height: 300px; // 设置你想要的高度
+  overflow-y: auto; // 添加竖向滚动条
+  //border: 1px solid #000; // 添加1像素宽，颜色为黑色的全部边框
+  background-color: #bce1fd;
+  // 添加圆角
+  border-radius: 20px;
+  width: 95%;
+  margin: 15px 0 20px 0; // 上右下左
+}
+
+.promptItemTitle {
+  margin: 20px 0 10px 0; // 上右下左
+  //border: 1px solid #000; // 添加1像素宽，颜色为黑色的全部边框
+  align-items: center; // 设置子元素垂直居中
+  display: flex; // 设置为 flex 容器，使子元素水平排列
+  justify-content: center; // 设置子元素水平居中
+}
+
+.promptTitle {
+  //border: 1px solid #000; // 添加1像素宽，颜色为黑色的全部边框
+  align-items: center; // 设置子元素垂直居中
+}
+
+.addVariableDiv {
+  //border: 1px solid #000; // 添加1像素宽，颜色为黑色的全部边框
+  align-items: center; // 设置子元素垂直居中
+  margin-left: 20vh;
+}
+
+.addVariable {
+  //background-color: #ffcd29;
+  background-color: #00b4cc;
+}
+
+.promptVariablesItem {
+  margin: 20px 0 20px 0; // 设置你想要的间距
+  //border: 1px solid #000; // 添加1像素宽，颜色为黑色的全部边框
+}
+
+.promptSceneDivTop {
+  position: sticky;
+  top: 0;
+  align-items: center; // 设置子元素垂直居中
+  display: flex; // 设置为 flex 容器，使子元素水平排列
+  justify-content: center; // 设置子元素水平居中
+  margin-top: 10px;
+}
+
+.promptSceneInputTop {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.promptVariableValue {
+  margin: 10px 0 10px 0;
+  display: flex;
+  align-items: center; // 设置子元素垂直居中
+  justify-content: center;
+  flex-direction: column; // 设置为 column，使子元素垂直排列
+
+}
+
+.promptVariableValueText {
+  width: 15vh; // 限制宽度
+  overflow: hidden; // 隐藏超出的文本
+  white-space: nowrap; // 防止文本换行
+  text-overflow: ellipsis; // 使用...来表示超出的文本
+}
+
+.promptVariablesInput {
+  width: 50%;
+  margin: 0 0 0 5vh;
+  //border: 1px solid #000; // 添加1像素宽，颜色为黑色的全部边框
+}
+
+.promptVariableDelete {
+  margin: 0 0 0 5vh;
+  background-color: #e26f59;
+}
+
+
+.contentContainerStyle {
+  display: flex; // 添加flex布局
+  overflow-x: scroll; // 添加水平滚动条
+  max-width: 300px; // 定义最大宽度
+}
+
+.contentDivFather {
+  display: flex; // 添加flex布局
+  flex-wrap: nowrap; // 设置子元素为横向排列且不换行
+  //align-items: center; // 设置子元素垂直居中
+  justify-content: center; // 设置子元素水平居中
+  overflow-x: auto; // 添加水平滚动条
+}
+
+//.contentSubElementDiv {
+//  border: 2px solid #56b7fd; // 添加1像素宽，颜色为黑色的全部边框
+//  height: 300px;
+//  //display: flex; // 设置为 flex 容器
+//  align-items: center; // 设置子元素垂直居中
+//  justify-content: center; // 设置子元素水平居中
+//  // 添加圆角
+//  border-radius: 20px;
+//  background-color: #bbdffb;
+//  margin: 15px 10px 10px 10px; // 上右下左
+//}
+
+.contentSubElementDiv {
+  position: relative; // 添加 relative 定位
+  border: 2px solid #56b7fd;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #bbdffb;
+  margin: 15px 10px 10px 10px;
+}
+
+//.contentSubElementDiv::before {
+//  content: "";
+//  position: absolute; // 使用 absolute 定位
+//  left: -12px; // 设置距离左侧的位置
+//  top: 0;
+//  bottom: 0;
+//  width: 1px; // 设置宽度为2像素
+//  background-color: #bce1fd; // 设置背景颜色为黑色
+//}
+
+.contentSubElementCard{
+  height: 90%;
+  width: 90%;
+  border: 1px solid #56b7fd; // 添加1像素宽，颜色为黑色的全部边框
+}
+
+.contentPromptTop{
+  //position: sticky;
+  margin-top: 15px;
+  //align-items: center; // 设置子元素垂直居中
+  //display: flex; // 设置为 flex 容器，使子元素水平排列
+  //justify-content: center; // 设置子元素水平居中
+}
+
+.contentPromptTopDiv{
+  width: 20%;
+}
+
+.contentInputTextArea{
+  margin-top: 5px;
+  //height: 210px !important ;
+  height: 60%;
+  resize: none;
+  width: 90%;
+}
+
+.contentPromptBottom{
+  display: flex;
+  float: right;
+  margin: 23px 20px 0 0; // 上右下左
+}
+
+.contentPromptBottomButton{
+  float: right;
+  //margin-top: 15px;
+  margin-right: 20px;
+  background-color: #e4705a;
+}
+
+.contentPromptBottomRunButton{
+  float: right;
+  margin-right: 20px;
+  background-color: #9646fd;
+  border: 4px solid #fdfdfd; /* 添加2像素宽，颜色为黑色的边框 */
+  border-radius: 20px; /* 添加圆角 */
+  line-height: 2px; /* 假设按钮的高度为40px，减去上下边框的总宽度（4px*2），剩余的就是文本的高度 */
+}
+
+.contentPromptBottomDeleteButton{
+  float: right;
+  margin-right: 20px;
+  background-color: #e26f59;
+  border: 4px solid #fdfdfd; /* 添加2像素宽，颜色为黑色的边框 */
+  border-radius: 20px; /* 添加圆角 */
+  line-height: 2px; /* 假设按钮的高度为40px，减去上下边框的总宽度（4px*2），剩余的就是文本的高度 */
+}
+
+.contentSubElementResponseDiv{
+  border: 2px solid #56b7fd; // 添加1像素宽，颜色为黑色的全部边框
+  height: 300px;
+  display: flex; // 设置为 flex 容器
+  align-items: center; // 设置子元素垂直居中
+  justify-content: center; // 设置子元素水平居中
+  // 添加圆角
+  border-radius: 20px;
+  background-color: #bbdffb;
+  margin: 20px 10px 10px 10px; // 上右下左
+}
+
+.contentDiv {
+  //border: 1px solid #000; // 添加1像素宽，颜色为黑色的全部边框
+  width: 700px; // 设置宽度
+  // 添加圆角
+  //border-radius: 20px;
+  //height: 300px;
+  //display: inline-block;
+  //overflow-y: auto; // 添加水平滚动条
+}
+.responseCardDiv{
+  height: 150px;
+  overflow-y: auto; // 添加垂直滚动条
+}
+
+.responseParagraph{
+  width: 90%; // 限制宽度
+  margin: 0 10px 0 10px; // 上右下左
+  //overflow: hidden; // 隐藏超出的文本
+  white-space: normal; // 允许文本换行
+  text-overflow: ellipsis; // 使用...来表示超出的文本
+}

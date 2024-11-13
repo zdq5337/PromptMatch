@@ -1,0 +1,48 @@
+.header-bar {
+  backdrop-filter: blur(8px);
+  border: 1px solid hsl(240 5.9% 90% / 0.4);
+  width: 100%;
+  z-index: 50;
+  position: sticky;
+  top: 0;
+}
+
+.header-bar-container {
+  // width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem;
+  max-width: 1536px;
+}
+.header-bar-logo {
+  font-weight: 800;
+  font-size: 30px;
+}
+.header-bar-login {
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: rgb(17 24 39);
+}
+.header-bar-menu {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.menu-item {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  color: hsl(240 10% 3.9% / 0.6);
+}
+.menu-item-active {
+  color: hsl(240 10% 3.9% / 0.8);
+}

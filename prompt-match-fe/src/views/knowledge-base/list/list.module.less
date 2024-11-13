@@ -1,0 +1,122 @@
+.knowledgeLibraryTitle {
+  box-sizing: border-box;
+  height: 100px;
+  border-bottom: 1px solid hsla(0, 0%, 87.8%, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+.knowledgeLibraryTitleLeft {
+  font-size: 30px;
+  line-height: 30px;
+  color: #616161;
+}
+.knowledgeLibraryTitleRightButton {
+  color: #616161;
+}
+
+.knowledgeModelIcon {
+  font-size: 30px;
+  background-color: rgb(209, 211, 214);
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  transition: background-color ease-in-out 0.2s;
+}
+.knowledgeModelIcon + .knowledgeModelIcon {
+  margin-left: 20px;
+}
+.knowledgeModelIconActive {
+  background-color: #1677ff;
+}
+.knowledgeLibraryList {
+  display: flex;
+  min-width: 100%;
+  padding-top: 20px;
+}
+.knowledgeLibraryListGutter {
+  width: max(20px, calc((100vw - 68rem) / 2));
+}
+.knowledgeLibraryListWrapper {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.knowledgeLibraryListItem {
+  aspect-ratio: auto;
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.knowledgeLibraryListItemInner {
+  border-radius: 20px;
+  background: center no-repeat
+    url('https://hq-prd-e-zine.oss-cn-szfinance.aliyuncs.com/agent/prd/admin/2024/05/22/7c40e42af8814a79ae9b7674fc3680bb.png');
+  transition: box-shadow ease-in-out 0.3s;
+  background-size: cover;
+  padding: 20px;
+  position: relative;
+}
+
+.knowledgeLibraryListItemInner:hover {
+  // background-size: auto;
+  box-shadow:
+    0 6px 16px -8px #00000014,
+    0 9px 28px #0000000d,
+    0 12px 48px 16px #00000008;
+}
+@media screen and (max-width: 900px) {
+  .knowledgeLibraryListItem {
+    width: 33.33%;
+  }
+}
+
+.knowledgeLibraryListItemIcon {
+  line-height: 1;
+  font-size: 30px;
+  padding: 15px;
+  background: linear-gradient(180deg, #75b4e2 0%, #9acff6 100%);
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  display: inline-block;
+  transition: background-color ease-in-out 0.2s;
+  margin-bottom: 20px;
+}
+
+.knowledgeLibraryListItemName {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.knowledgeLibraryListIteDesc {
+  font-size: 14px;
+  line-height: 20px;
+  color: #131212;
+  opacity: 0.8;
+}
+
+.dropdownMoreButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0;
+  padding: 8px;
+  color: transparent;
+  transition: opacity ease-in-out 0.3s;
+}
+.dropdownMoreButtonActive {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 15px;
+  border-radius: 6px;
+  opacity: 1;
+}
+.delete-item{
+  color: #f00;
+  // cursor: pointer;
+}
